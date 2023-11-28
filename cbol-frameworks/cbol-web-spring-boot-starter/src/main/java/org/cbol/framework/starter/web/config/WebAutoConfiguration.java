@@ -1,5 +1,6 @@
 package org.cbol.framework.starter.web.config;
 
+import org.cbol.framework.starter.web.ApplicationContextHolder;
 import org.cbol.framework.starter.web.GlobalExceptionHandler;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -16,5 +17,11 @@ public class WebAutoConfiguration {
     @ConditionalOnMissingBean
     public GlobalExceptionHandler globalExceptionHandler() {
         return new GlobalExceptionHandler();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public ApplicationContextHolder applicationContextHolder() {
+        return new ApplicationContextHolder();
     }
 }
