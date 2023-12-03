@@ -1,9 +1,9 @@
 package org.cbol.framework.starter.web;
 
 import cn.hutool.core.util.StrUtil;
-import com.cbol.common.exception.AbstractException;
-import com.cbol.common.result.Result;
-import com.cbol.common.result.Results;
+import org.cbol.common.exception.AbstractException;
+import org.cbol.common.result.Result;
+import org.cbol.common.result.Results;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

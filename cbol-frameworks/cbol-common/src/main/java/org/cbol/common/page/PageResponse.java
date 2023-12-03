@@ -1,4 +1,4 @@
-package com.cbol.common.page;
+package org.cbol.common.page;
 
 import java.io.Serializable;
 

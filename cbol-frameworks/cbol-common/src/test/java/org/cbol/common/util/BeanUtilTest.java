@@ -1,7 +1,7 @@
-package com.cbol.common.util;
+package org.cbol.common.util;
 
-import com.cbol.common.Student;
-import com.cbol.common.StudentVO;
+import org.cbol.common.Student;
+import org.cbol.common.StudentVO;
 import org.junit.Assert;
 import org.junit.Test;
 

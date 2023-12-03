@@ -1,4 +1,4 @@
-package com.cbol.common.result;
+package org.cbol.common.result;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

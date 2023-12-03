@@ -1,7 +1,7 @@
-package com.cbol.common.result;
+package org.cbol.common.result;
 
-import com.cbol.common.errorcode.BaseErrorCode;
-import com.cbol.common.exception.AbstractException;
+import org.cbol.common.errorcode.BaseErrorCode;
+import org.cbol.common.exception.AbstractException;
 
 import java.util.Optional;
 

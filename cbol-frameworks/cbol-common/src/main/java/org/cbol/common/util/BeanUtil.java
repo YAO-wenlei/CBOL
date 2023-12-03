@@ -1,4 +1,4 @@
-package com.cbol.common.util;
+package org.cbol.common.util;
 
 import com.github.dozermapper.core.DozerBeanMapperBuilder;
 import com.github.dozermapper.core.Mapper;

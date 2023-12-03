@@ -1,6 +1,6 @@
-package com.cbol.common.exception;
+package org.cbol.common.exception;
 
-import com.cbol.common.errorcode.IErrorCode;
+import org.cbol.common.errorcode.IErrorCode;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 

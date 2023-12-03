@@ -1,4 +1,4 @@
-package com.cbol.common.errorcode;
+package org.cbol.common.errorcode;
 
 /**
  * @author yaowenlei

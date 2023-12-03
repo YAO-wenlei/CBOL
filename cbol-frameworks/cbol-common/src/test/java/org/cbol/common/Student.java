@@ -1,4 +1,4 @@
-package com.cbol.common;
+package org.cbol.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

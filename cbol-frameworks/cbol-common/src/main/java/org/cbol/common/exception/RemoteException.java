@@ -1,7 +1,7 @@
-package com.cbol.common.exception;
+package org.cbol.common.exception;
 
-import com.cbol.common.errorcode.BaseErrorCode;
-import com.cbol.common.errorcode.IErrorCode;
+import org.cbol.common.errorcode.BaseErrorCode;
+import org.cbol.common.errorcode.IErrorCode;
 
 /**
  * @author yaowenlei
