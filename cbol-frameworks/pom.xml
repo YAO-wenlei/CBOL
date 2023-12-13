@@ -14,6 +14,7 @@
     <modules>
         <module>cbol-common</module>
         <module>cbol-web-spring-boot-starter</module>
+        <module>cbol-database-spring-boot-starter</module>
     </modules>
 
     <dependencies>
