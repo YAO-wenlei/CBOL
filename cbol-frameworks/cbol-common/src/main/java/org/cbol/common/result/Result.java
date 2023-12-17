@@ -21,7 +21,7 @@ public class Result<T> implements Serializable {
 
     private T data;
 
-    public boolean idSuccess() {
+    public boolean isSuccess() {
         return SUCCESS_CODE.equals(code);
     }
 
