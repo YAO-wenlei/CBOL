@@ -1,6 +1,7 @@
 package org.cbol.framework.starter.web;
 
 import cn.hutool.core.util.StrUtil;
+import org.cbol.common.errorcode.BaseErrorCode;
 import org.cbol.common.exception.AbstractException;
 import org.cbol.common.result.Result;
 import org.cbol.common.result.Results;
@@ -31,7 +32,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Throwable.class)
     public Result defaultErrorHandler(HttpServletRequest request , Throwable e) {
         log.error("[{}]:{}", request.getMethod(), getUrl(request), e);
-        return Results.failure();
+        return Results.failure(BaseErrorCode.SERVER_BUSY_ERROR);
     }
 
 
