@@ -26,7 +26,8 @@ public class Results {
     public static <T> Result<T> success(T data) {
         return new Result<T>()
                 .setCode(Result.SUCCESS_CODE)
-                .setData(data);
+                .setData(data)
+                .setMessage(Result.SUCCESS_MESSAGE);
     }
 
     /**

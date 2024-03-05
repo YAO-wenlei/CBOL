@@ -14,6 +14,7 @@ import java.io.Serializable;
 public class Result<T> implements Serializable {
 
     public static final String SUCCESS_CODE = "0";
+    public static final String SUCCESS_MESSAGE = "请求成功!";
 
     private String code;
 
