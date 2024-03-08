@@ -12,7 +12,7 @@ import java.util.Date;
  * @date 2023年12月08日 10:04 下午
  */
 @Data
-public class BaseDo {
+public class BaseDO {
     /**
      * 创建时间
      */
@@ -29,5 +29,6 @@ public class BaseDo {
      * 删除标识
      */
     @TableLogic
+    @TableField(fill = FieldFill.INSERT)
     private Integer delFlag;
 }

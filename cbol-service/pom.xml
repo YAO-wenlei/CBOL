@@ -8,22 +8,17 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>cbol-frameworks</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>cbol-common</module>
-        <module>cbol-web-spring-boot-starter</module>
-        <module>cbol-database-spring-boot-starter</module>
-        <module>cbol-design-patterns</module>
-        <module>cbol-cache</module>
+        <module>user-service</module>
+        <module>club-service</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>cbol-service</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
 </project>

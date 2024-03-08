@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.cbol.database.handler.CbolMetaObjectHandler;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 
 /**
@@ -26,6 +27,7 @@ public class MyBatisPlusAutoConfiguration {
      * 自动填充字段
      */
     @Bean
+    @ConditionalOnProperty(prefix = "mybatis-plus.autoFill",name = "enable",havingValue = "true",matchIfMissing = true)
     public CbolMetaObjectHandler cbolMetaObjectHandler() {
         return new CbolMetaObjectHandler();
     }

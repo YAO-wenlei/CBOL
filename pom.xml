@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cbol-frameworks</module>
+        <module>cbol-service</module>
     </modules>
 
     <properties>
