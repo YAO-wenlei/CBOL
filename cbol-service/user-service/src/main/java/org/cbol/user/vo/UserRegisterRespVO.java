@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 public class UserRegisterRespVO {
 
 	/**
+	 * 主键
+	 */
+	private Long id;
+	/**
 	 * 昵称
 	 */
 	private String name;
@@ -19,10 +23,6 @@ public class UserRegisterRespVO {
 	 */
 	private String accountNumber;
 
-	/**
-	 * 手机号
-	 */
-	private String phone;
 
 	/**
 	 * 头像地址

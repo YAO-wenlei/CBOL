@@ -37,10 +37,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
 
     @Override
     public UserRegisterRespVO register(UserRegisterVO userRegisterVO) {
-
         //todo 用户注册参数校验
-        userMapper.insert(BeanUtil.convert(userRegisterVO, UserDO.class));
-        return BeanUtil.convert(userRegisterVO, UserRegisterRespVO.class);
+        UserDO userDO = new UserDO();
+        userMapper.insert(BeanUtil.convert(userRegisterVO, userDO));
+        return BeanUtil.convert(userDO, UserRegisterRespVO.class);
     }
 
     @Override
