@@ -60,7 +60,7 @@ public class UserInfoController {
      * 分页查询用户信息
      */
     @PostMapping("/page")
-    public Result<PageResponse<UserInfoVO>> pageUserInfo(UserPageQueryVO pageQueryVO) {
+    public Result<PageResponse<UserInfoVO>> pageUserInfo(@RequestBody UserPageQueryVO pageQueryVO) {
         return Results.success(userService.pageUserInfo(pageQueryVO));
     }
 
