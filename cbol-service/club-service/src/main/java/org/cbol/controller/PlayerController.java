@@ -1,7 +1,6 @@
 package org.cbol.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Param;
 import org.cbol.common.page.PageResponse;
 import org.cbol.common.result.Result;
 import org.cbol.common.result.Results;
@@ -68,7 +67,7 @@ public class PlayerController {
 	 * 根据clucId查询厂牌下所有球员
 	 */
 	@GetMapping("/players")
-	public Result<List<PlayerInfoVO>> getPlayers(@Param("clubId") Long clubId) {
+	public Result<List<PlayerInfoVO>> getPlayers(@RequestParam("clubId") Long clubId) {
 		return Results.success(playerService.playersByClubId(clubId));
 	}
 
