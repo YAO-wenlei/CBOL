@@ -1,10 +1,12 @@
 package org.cbol.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.cbol.common.page.PageResponse;
 import org.cbol.common.result.Result;
 import org.cbol.common.result.Results;
 import org.cbol.service.ClubService;
 import org.cbol.vo.ClubInfoVO;
+import org.cbol.vo.ClubPageQueryVO;
 import org.cbol.vo.ClubRegisterRespVO;
 import org.cbol.vo.ClubRegisterVO;
 import org.springframework.web.bind.annotation.*;
@@ -48,6 +50,14 @@ public class ClubController {
 	public Result<Void> delete(@PathVariable("clubId")Long clubId) {
 		clubService.delete(clubId);
 		return Results.success();
+	}
+
+	/**
+	 * 分页查询厂牌信息
+	 */
+	@PostMapping("/club/page")
+	public Result<PageResponse<ClubInfoVO>> pageQuery(@RequestBody ClubPageQueryVO clubPageQueryVO) {
+		return Results.success(clubService.pageQuery(clubPageQueryVO));
 	}
 
 

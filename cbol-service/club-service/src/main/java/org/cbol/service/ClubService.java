@@ -1,8 +1,10 @@
 package org.cbol.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.cbol.common.page.PageResponse;
 import org.cbol.dao.entity.ClubDO;
 import org.cbol.vo.ClubInfoVO;
+import org.cbol.vo.ClubPageQueryVO;
 import org.cbol.vo.ClubRegisterRespVO;
 import org.cbol.vo.ClubRegisterVO;
 
@@ -30,6 +32,11 @@ public interface ClubService extends IService<ClubDO> {
 	 * 删除厂牌
 	 */
 	void delete(Long clubId);
+
+	/**
+	 * 分页查询厂牌
+	 */
+	PageResponse<ClubInfoVO> pageQuery(ClubPageQueryVO clubPageQueryVO);
 
 
 }
