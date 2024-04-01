@@ -11,16 +11,16 @@ import org.cbol.dao.entity.ArenaDO;
 import org.cbol.dao.mapper.ArenaMapper;
 import org.cbol.database.util.PageUtil;
 import org.cbol.service.ArenaService;
-import org.cbol.vo.ArenaCreateRespVO;
-import org.cbol.vo.ArenaCreateVO;
-import org.cbol.vo.ArenaInfoVO;
-import org.cbol.vo.ArenaPageQueryVO;
+import org.cbol.vo.arena.ArenaCreateRespVO;
+import org.cbol.vo.arena.ArenaCreateVO;
+import org.cbol.vo.arena.ArenaInfoVO;
+import org.cbol.vo.arena.ArenaPageQueryVO;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ArenaServiceImpl extends ServiceImpl<ArenaMapper, ArenaDO> implements ArenaService {
 	@Override
-	public ArenaCreateRespVO creat(ArenaCreateVO arenaCreateVO) {
+	public ArenaCreateRespVO create(ArenaCreateVO arenaCreateVO) {
 		ArenaDO arenaDO = new ArenaDO();
 		this.baseMapper.insert(BeanUtil.convert(arenaCreateVO, arenaDO));
 		return BeanUtil.convert(arenaDO, ArenaCreateRespVO.class);

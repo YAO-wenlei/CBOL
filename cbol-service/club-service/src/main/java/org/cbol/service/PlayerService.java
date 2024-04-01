@@ -3,10 +3,10 @@ package org.cbol.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.cbol.common.page.PageResponse;
 import org.cbol.dao.entity.PlayerDO;
-import org.cbol.vo.PlayerInfoVO;
-import org.cbol.vo.PlayerPageQueryVO;
-import org.cbol.vo.PlayerRegisterRespVO;
-import org.cbol.vo.PlayerRegisterVO;
+import org.cbol.vo.player.PlayerInfoVO;
+import org.cbol.vo.player.PlayerPageQueryVO;
+import org.cbol.vo.player.PlayerRegisterRespVO;
+import org.cbol.vo.player.PlayerRegisterVO;
 
 import java.util.List;
 

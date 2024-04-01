@@ -1,4 +1,4 @@
-package org.cbol.vo;
+package org.cbol.vo.arena;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

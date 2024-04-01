@@ -1,4 +1,4 @@
-package org.cbol.vo;
+package org.cbol.vo.player;
 
 import lombok.Data;
 import org.cbol.common.page.PageRequest;

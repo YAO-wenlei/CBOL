@@ -1,4 +1,4 @@
-package org.cbol.vo;
+package org.cbol.vo.club;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubRegisterVO {
+public class ClubRegisterRespVO {
+	/**
+	 * 主键
+	 */
+	private Long id;
+
 	/**
 	 * 标识
 	 */
@@ -32,30 +37,4 @@ public class ClubRegisterVO {
 	 * 球队logo标识
 	 */
 	private String logoUrl;
-
-	/**
-	 * 地址
-	 */
-	private String address;
-
-	/**
-	 * 区域
-	 */
-	private String region;
-
-	/**
-	 * 手机
-	 */
-	private String phone;
-
-	/**
-	 * 负责人
-	 */
-	private String leader;
-
-	/**
-	 * 负责人手机号
-	 */
-	private String leaderPhone;
-
 }

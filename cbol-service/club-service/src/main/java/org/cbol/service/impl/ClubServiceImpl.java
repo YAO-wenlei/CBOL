@@ -12,10 +12,10 @@ import org.cbol.dao.entity.ClubDO;
 import org.cbol.dao.mapper.ClubMapper;
 import org.cbol.database.util.PageUtil;
 import org.cbol.service.ClubService;
-import org.cbol.vo.ClubInfoVO;
-import org.cbol.vo.ClubPageQueryVO;
-import org.cbol.vo.ClubRegisterRespVO;
-import org.cbol.vo.ClubRegisterVO;
+import org.cbol.vo.club.ClubInfoVO;
+import org.cbol.vo.club.ClubPageQueryVO;
+import org.cbol.vo.club.ClubRegisterRespVO;
+import org.cbol.vo.club.ClubRegisterVO;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,21 +1,13 @@
-package org.cbol.vo;
+package org.cbol.vo.club;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubInfoVO {
-	/**
-	 * 主键
-	 */
-	private Long id;
-
+public class ClubRegisterVO {
 	/**
 	 * 标识
 	 */
@@ -65,11 +57,5 @@ public class ClubInfoVO {
 	 * 负责人手机号
 	 */
 	private String leaderPhone;
-
-	/**
-	 * 创建时间
-	 */
-	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
-	private Date createTime;
 
 }

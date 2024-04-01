@@ -1,4 +1,4 @@
-package org.cbol.vo;
+package org.cbol.vo.arena;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -36,8 +36,8 @@ public class ArenaCreateVO {
 	/**
 	 * 建造时间
 	 */
-	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")  // 将出参转化为指定格式
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //接收页面入参
 	private Date builtTime;
 
 	/**

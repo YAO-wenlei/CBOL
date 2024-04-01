@@ -3,10 +3,10 @@ package org.cbol.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.cbol.common.page.PageResponse;
 import org.cbol.dao.entity.ClubDO;
-import org.cbol.vo.ClubInfoVO;
-import org.cbol.vo.ClubPageQueryVO;
-import org.cbol.vo.ClubRegisterRespVO;
-import org.cbol.vo.ClubRegisterVO;
+import org.cbol.vo.club.ClubInfoVO;
+import org.cbol.vo.club.ClubPageQueryVO;
+import org.cbol.vo.club.ClubRegisterRespVO;
+import org.cbol.vo.club.ClubRegisterVO;
 
 /**
  * @author yaowenlei

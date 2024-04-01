@@ -36,7 +36,7 @@ public class PageResponse<T> implements Serializable {
     /**
      * 查询数据
      */
-    private List<T> records = Collections.emptyList();;
+    private List<T> records = Collections.emptyList();
 
 
 }

@@ -5,10 +5,10 @@ import org.cbol.common.page.PageResponse;
 import org.cbol.common.result.Result;
 import org.cbol.common.result.Results;
 import org.cbol.service.ArenaService;
-import org.cbol.vo.ArenaCreateRespVO;
-import org.cbol.vo.ArenaCreateVO;
-import org.cbol.vo.ArenaInfoVO;
-import org.cbol.vo.ArenaPageQueryVO;
+import org.cbol.vo.arena.ArenaCreateRespVO;
+import org.cbol.vo.arena.ArenaCreateVO;
+import org.cbol.vo.arena.ArenaInfoVO;
+import org.cbol.vo.arena.ArenaPageQueryVO;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -23,7 +23,7 @@ public class ArenaController {
 	 */
 	@PostMapping("/arena/create")
 	public Result<ArenaCreateRespVO> create(@RequestBody ArenaCreateVO arenaCreateVO) {
-		return Results.success(arenaService.creat(arenaCreateVO));
+		return Results.success(arenaService.create(arenaCreateVO));
 	}
 
 	/**

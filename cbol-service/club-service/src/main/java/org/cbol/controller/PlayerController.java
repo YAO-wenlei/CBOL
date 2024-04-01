@@ -5,10 +5,10 @@ import org.cbol.common.page.PageResponse;
 import org.cbol.common.result.Result;
 import org.cbol.common.result.Results;
 import org.cbol.service.PlayerService;
-import org.cbol.vo.PlayerInfoVO;
-import org.cbol.vo.PlayerPageQueryVO;
-import org.cbol.vo.PlayerRegisterRespVO;
-import org.cbol.vo.PlayerRegisterVO;
+import org.cbol.vo.player.PlayerInfoVO;
+import org.cbol.vo.player.PlayerPageQueryVO;
+import org.cbol.vo.player.PlayerRegisterRespVO;
+import org.cbol.vo.player.PlayerRegisterVO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

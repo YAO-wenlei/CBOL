@@ -1,20 +1,25 @@
-package org.cbol.vo;
+package org.cbol.vo.arena;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.cbol.common.page.PageRequest;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubPageQueryVO extends PageRequest {
+public class ArenaCreateRespVO {
 	/**
-	 * 厂牌id
+	 * 主键
 	 */
 	private Long id;
+
 	/**
-	 * 厂牌名称
+	 * 球馆名称
 	 */
 	private String name;
+
+	/**
+	 * 球馆标志
+	 */
+	private String logoUrl;
 }

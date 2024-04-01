@@ -3,16 +3,16 @@ package org.cbol.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.cbol.common.page.PageResponse;
 import org.cbol.dao.entity.ArenaDO;
-import org.cbol.vo.ArenaCreateRespVO;
-import org.cbol.vo.ArenaCreateVO;
-import org.cbol.vo.ArenaInfoVO;
-import org.cbol.vo.ArenaPageQueryVO;
+import org.cbol.vo.arena.ArenaCreateRespVO;
+import org.cbol.vo.arena.ArenaCreateVO;
+import org.cbol.vo.arena.ArenaInfoVO;
+import org.cbol.vo.arena.ArenaPageQueryVO;
 
 public interface ArenaService extends IService<ArenaDO> {
 	/**
 	 * 创建球馆
 	 */
-	ArenaCreateRespVO creat(ArenaCreateVO arenaCreateVO);
+	ArenaCreateRespVO create(ArenaCreateVO arenaCreateVO);
 
 	/**
 	 * 查询球馆

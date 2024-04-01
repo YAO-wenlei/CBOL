@@ -14,10 +14,10 @@ import org.cbol.dao.mapper.PlayerMapper;
 import org.cbol.database.util.PageUtil;
 import org.cbol.enums.BaseErrorCode;
 import org.cbol.service.PlayerService;
-import org.cbol.vo.PlayerInfoVO;
-import org.cbol.vo.PlayerPageQueryVO;
-import org.cbol.vo.PlayerRegisterRespVO;
-import org.cbol.vo.PlayerRegisterVO;
+import org.cbol.vo.player.PlayerInfoVO;
+import org.cbol.vo.player.PlayerPageQueryVO;
+import org.cbol.vo.player.PlayerRegisterRespVO;
+import org.cbol.vo.player.PlayerRegisterVO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
