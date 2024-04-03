@@ -92,4 +92,15 @@ public class DistributedCacheTest {
         System.out.println(delete);
     }
 
+    @Test
+    public void testGetStringPutCacheFalse() {
+        String s = distributedCache.get("liuhui", String.class, () -> "succees", false);
+        System.out.println(s);
+    }
+    @Test
+    public void testGetStringPutCacheTrue() {
+        String s = distributedCache.get("liuhui", String.class, () -> "succees", true);
+        System.out.println(s);
+    }
+
 }
