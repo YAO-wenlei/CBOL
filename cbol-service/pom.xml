@@ -12,6 +12,8 @@
     <modules>
         <module>user-service</module>
         <module>club-service</module>
+        <module>order-service</module>
+        <module>pay-service</module>
     </modules>
 
     <artifactId>cbol-service</artifactId>
