@@ -19,7 +19,7 @@ public class ArenaSeatCreateVO {
     /**
      * 价格
      */
-    private Double price;
+    private Integer price;
     /**
      * 开售时间
      */

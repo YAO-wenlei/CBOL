@@ -20,6 +20,14 @@ public class GamePageQueryVO extends PageRequest {
      * 厂牌ID
      */
     private Long clubId;
+    /**
+     * 比赛标题
+     */
+    private String title;
+    /**
+     * 海报地址
+     */
+    private String playbillUrl;
 
     /**
      * 开始时间

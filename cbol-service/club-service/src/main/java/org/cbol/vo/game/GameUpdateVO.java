@@ -27,6 +27,14 @@ public class GameUpdateVO {
      * 客队id
      */
     private Long guestTeamId;
+    /**
+     * 比赛标题
+     */
+    private String title;
+    /**
+     * 海报地址
+     */
+    private String playbillUrl;
 
     /**
      * 比赛球馆id

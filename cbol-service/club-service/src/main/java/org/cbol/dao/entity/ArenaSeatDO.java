@@ -44,7 +44,7 @@ public class ArenaSeatDO extends BaseDO {
     /**
      * 价格
      */
-    private Double price;
+    private Integer price;
 
     /**
      * 开售时间

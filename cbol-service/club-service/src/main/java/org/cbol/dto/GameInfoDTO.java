@@ -15,6 +15,14 @@ public class GameInfoDTO {
      */
     private Long id;
     /**
+     * 比赛标题
+     */
+    private String title;
+    /**
+     * 海报地址
+     */
+    private String playbillUrl;
+    /**
      * 主队id
      */
     private Long homeTeamId;

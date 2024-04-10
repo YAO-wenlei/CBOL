@@ -21,6 +21,8 @@
 
     <resultMap id="baseMap" type="org.cbol.dto.GameInfoDTO">
         <id column="id" property="id" jdbcType="BIGINT"></id>
+        <result column="title" property="title" jdbcType="VARCHAR"></result>
+        <result column="playbill_url" property="playbillUrl" jdbcType="VARCHAR"></result>
         <result column="home_team_id" property="homeTeamId" jdbcType="BIGINT"></result>
         <result column="guest_team_id" property="guestTeamId" jdbcType="BIGINT"></result>
         <result column="arena_id" property="arenaId" jdbcType="BIGINT"></result>
@@ -34,6 +36,8 @@
     <select id="getGameInfoDTOById" resultMap="baseMap" parameterType="long">
         SELECT
             t1.id,
+            t1.title,
+            t1.playbill_url,
             t1.home_team_id,
             t1.guest_team_id,
             t1.arena_id,
@@ -50,6 +54,8 @@
     <select id="pageQuery" resultMap="baseMap" parameterType="org.cbol.vo.game.GamePageQueryVO">
         SELECT
             t1.id,
+            t1.title,
+            t1.playbill_url,
             t1.home_team_id,
             t1.guest_team_id,
             t1.arena_id,
