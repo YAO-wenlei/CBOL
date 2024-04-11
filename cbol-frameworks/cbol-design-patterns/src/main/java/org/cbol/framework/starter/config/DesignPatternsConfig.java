@@ -1,6 +1,7 @@
 package org.cbol.framework.starter.config;
 
 import org.cbol.framework.starter.chain.AbstractChainContext;
+import org.cbol.framework.starter.strategy.StrategyExecuteChoose;
 import org.cbol.framework.starter.web.config.WebAutoConfiguration;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +16,11 @@ public class DesignPatternsConfig {
     @Bean
     public AbstractChainContext abstractChainContext() {
         return new AbstractChainContext();
+    }
+
+    @Bean
+    public StrategyExecuteChoose strategyExecuteChoose() {
+        return new StrategyExecuteChoose();
     }
 
 }
