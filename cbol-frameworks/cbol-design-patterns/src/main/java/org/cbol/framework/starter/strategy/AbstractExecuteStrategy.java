@@ -2,10 +2,10 @@ package org.cbol.framework.starter.strategy;
 
 public interface AbstractExecuteStrategy<REQUEST,RESPONSE> {
 
-    String mark();
+    default String mark(){return null;}
 
-    void execute(REQUEST requestParam);
+    default void execute(REQUEST requestParam){}
 
-    RESPONSE executeRes(REQUEST requestParam);
+    default RESPONSE executeRes(REQUEST requestParam){return null;}
 
 }
