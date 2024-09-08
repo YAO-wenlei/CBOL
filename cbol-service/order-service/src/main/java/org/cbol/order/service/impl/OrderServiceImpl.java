@@ -137,6 +137,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, OrderDO> implemen
                 .build();
     }
 
+    @Override
     public List<OrderItemQueryVO> getSubOrders(String orderSn) {
         LambdaQueryWrapper<OrderItemDO> queryWrapper = Wrappers.lambdaQuery(OrderItemDO.class)
                 .eq(OrderItemDO::getOrderSn, orderSn);
